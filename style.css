@@ -1,0 +1,192 @@
+:root {
+  --bg-dark: #121212;
+  --bg-light: #ffffff;
+  --text-dark: #e0e0e0;
+  --text-light: #121212;
+  --accent: #8f94fb;
+  --transition: 0.3s ease;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color var(--transition), color var(--transition);
+}
+
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+header {
+  padding: 20px 0;
+  background-color: var(--bg-light);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  transition: color var(--transition);
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color var(--transition);
+}
+
+nav button:hover {
+  color: var(--accent);
+}
+
+#hero {
+  background-color: var(--accent);
+  color: var(--bg-dark);
+  text-align: center;
+  padding: 100px 0;
+}
+
+#hero h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+#hero p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  background-color: var(--accent);
+  color: var(--bg-dark);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color var(--transition);
+}
+
+.btn:hover {
+  background-color: #7a8bfb;
+}
+
+.section {
+  padding: 80px 0;
+  background-color: var(--bg-light);
+  text-align: center;
+}
+
+.section:nth-child(even) {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+footer {
+  padding: 20px 0;
+  background-color: var(--bg-light);
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+}
+
+.work-item {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.work-item h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.work-item p {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  #hero h2 {
+    font-size: 2rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+}
+.social-links {
+  margin-bottom: 15px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  filter: invert(0%);
+}
+
+body.dark-mode .social-links img {
+  filter: invert(100%);
+}
+
