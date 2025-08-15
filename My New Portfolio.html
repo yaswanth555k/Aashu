@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Yaswanth Kumar C — Sr. Software Engineer & Oracle Finance Consultant (EBS & Cloud). Projects, skills, and contact." />
+  <meta property="og:title" content="Yaswanth Kumar C — Sr. Software Engineer" />
+  <meta property="og:description" content="Oracle Finance Consultant (EBS & Cloud), Full‑stack developer. View projects, skills, and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://about.me/chandragiriyaswanthkumar" />
+  <meta property="og:image" content="" />
+  <title>Yaswanth Kumar C — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            neon: {
+              pink: '#ff3cac',
+              purple: '#784BA0',
+              blue: '#2b86c5',
+              green: '#22d3ee'
+            },
+            pastel: {
+              base: '#f9fafb',
+              mint: '#d1fae5',
+              lilac: '#e9d5ff',
+              peach: '#ffe4e6',
+            }
+          },
+          keyframes: {
+            fadeUp: {
+              '0%': { opacity: 0, transform: 'translateY(20px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' }
+            },
+            floatY: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-8px)' }
+            }
+          },
+          animation: {
+            fadeUp: 'fadeUp 0.8s ease-out forwards',
+            floatY: 'floatY 6s ease-in-out infinite'
+          },
+          boxShadow: {
+            soft: '0 10px 30px -12px rgba(0,0,0,.25)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Parallax effect for hero gradient layer */
+    .parallax {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Yaswanth Kumar C",
+      "url": "https://about.me/chandragiriyaswanthkumar",
+      "jobTitle": "Sr. Software Engineer / Oracle Finance Consultant",
+      "email": "mailto:cyaswanthkumar555@gmail.com",
+      "sameAs": [
+        "https://about.me/chandragiriyaswanthkumar"
+      ]
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-white text-slate-800 dark:bg-slate-950 dark:text-slate-100">
+  <!-- Floating Neon Background -->
+  <div aria-hidden="true" class="fixed inset-0 -z-10 overflow-hidden">
+    <div id="heroGlow" class="parallax pointer-events-none absolute -top-32 -left-32 h-96 w-96 rounded-full blur-3xl opacity-40 dark:opacity-30"
+      style="background: radial-gradient(circle at 30% 30%, #ff3cac33, transparent 60%), radial-gradient(circle at 70% 70%, #2b86c533, transparent 60%)"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 dark:supports-[backdrop-filter]:bg-slate-900/70 border-b border-slate-200/60 dark:border-slate-800">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="#home" class="font-extrabold tracking-tight text-xl md:text-2xl">YK<span class="text-cyan-500">.</span></a>
+      <button id="themeToggle" class="md:hidden rounded-xl px-3 py-2 border border-slate-300 dark:border-slate-700">🌓</button>
+      <ul class="hidden md:flex gap-6 text-sm font-medium">
+        <li><a href="#home" class="nav-link py-2 hover:text-cyan-500">Home</a></li>
+        <li><a href="#about" class="nav-link py-2 hover:text-cyan-500">About</a></li>
+        <li><a href="#projects" class="nav-link py-2 hover:text-cyan-500">Projects</a></li>
+        <li><a href="#skills" class="nav-link py-2 hover:text-cyan-500">Skills</a></li>
+        <li><a href="#contact" class="nav-link py-2 hover:text-cyan-500">Contact</a></li>
+      </ul>
+      <div class="hidden md:flex items-center gap-3">
+        <a href="mailto:cyaswanthkumar555@gmail.com" class="rounded-xl border border-slate-300 dark:border-slate-700 px-4 py-2 hover:border-cyan-500 hover:text-cyan-500 transition">Email</a>
+        <button id="themeToggleDesktop" class="rounded-xl px-4 py-2 border border-slate-300 dark:border-slate-700">🌓</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6 py-24 md:py-32 grid md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-6 animate-fadeUp opacity-0">
+        <p class="text-sm uppercase tracking-widest text-slate-500 dark:text-slate-400">Sr. Software Engineer · Oracle Finance Consultant</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Hi, I'm <span class="bg-gradient-to-r from-neon-pink via-neon-purple to-neon-blue bg-clip-text text-transparent">Yaswanth Kumar C</span></h1>
+        <p class="text-lg text-slate-600 dark:text-slate-300 max-w-prose">Technical and result‑oriented professional with 4+ years of experience across Oracle EBS & Cloud (GL, AR, AP, FA, CM), PL/SQL development, and full‑stack projects. Currently Senior Lead Analyst (Oracle Finance) at American Express.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#projects" class="rounded-2xl px-5 py-3 bg-cyan-500 text-white shadow-soft hover:translate-y-[-2px] transition">View Projects</a>
+          <a href="#contact" class="rounded-2xl px-5 py-3 border border-slate-300 dark:border-slate-700 hover:border-cyan-500 hover:text-cyan-500 transition">Contact Me</a>
+        </div>
+      </div>
+      <div class="relative h-64 md:h-96">
+        <!-- Placeholder profile / hero art -->
+        <div class="absolute inset-0 rounded-3xl bg-gradient-to-tr from-neon-purple/40 via-neon-blue/40 to-neon-pink/40 dark:from-neon-purple/30 dark:via-neon-blue/30 dark:to-neon-pink/30 blur-2xl"></div>
+        <div class="relative h-full w-full rounded-3xl bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-center shadow-soft overflow-hidden">
+          <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Profile" class="h-40 w-40 rounded-full object-cover ring-4 ring-cyan-400/40 animate-floatY" loading="lazy"/>
+          <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(600px 200px at 80% 20%, rgba(34,211,238,0.15), transparent), radial-gradient(600px 200px at 10% 80%, rgba(255,60,172,0.12), transparent)"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20 md:py-24 bg-pastel-base/60 dark:bg-slate-900/40">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div class="order-2 md:order-1 opacity-0 will-change-transform" data-animate>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+        <p class="text-slate-600 dark:text-slate-300 mb-4">I'm a Sr. Software Engineer focused on Oracle Finance implementations (EBS & Cloud) and PL/SQL development. I enjoy designing robust financial workflows, optimizing performance, and building clean, user‑friendly tools. Previously at Capgemini (VMware client), TCS, and Republic World.</p>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+          <li class="p-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">📍 Bengaluru, India</li>
+          <li class="p-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">📧 cyaswanthkumar555@gmail.com</li>
+          <li class="p-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">📞 9108438582</li>
+          <li class="p-3 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">🔗 <a class="underline hover:text-cyan-500" href="https://about.me/chandragiriyaswanthkumar" target="_blank" rel="noopener">about.me/chandragiriyaswanthkumar</a></li>
+        </ul>
+        <div class="mt-6 flex gap-3">
+          <a href="#" download class="rounded-2xl px-5 py-3 bg-slate-900 text-white dark:bg-white dark:text-slate-900 hover:bg-cyan-500 hover:text-white transition">Download Resume</a>
+          <a href="#contact" class="rounded-2xl px-5 py-3 border border-slate-300 dark:border-slate-700 hover:border-cyan-500 hover:text-cyan-500 transition">Hire Me</a>
+        </div>
+      </div>
+      <div class="order-1 md:order-2 opacity-0" data-animate>
+        <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1200&auto=format&fit=crop" alt="Profile" class="rounded-3xl w-full h-72 md:h-[26rem] object-cover shadow-soft" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Skills overview chips -->
+    <div class="max-w-6xl mx-auto px-6 mt-10">
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 rounded-full bg-cyan-100 text-cyan-800 dark:bg-cyan-900/40 dark:text-cyan-200 text-xs">Oracle EBS & Cloud (GL, AR, AP, FA, CM)</span>
+        <span class="px-3 py-1 rounded-full bg-pink-100 text-pink-800 dark:bg-pink-900/40 dark:text-pink-200 text-xs">PL/SQL</span>
+        <span class="px-3 py-1 rounded-full bg-indigo-100 text-indigo-800 dark:bg-indigo-900/40 dark:text-indigo-200 text-xs">APIs (Postman, SOAP UI)</span>
+        <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200 text-xs">Full‑stack (HTML, CSS, JS, PHP/Laravel)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-20 md:py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-end justify-between gap-4 mb-8">
+        <h2 class="text-3xl md:text-4xl font-bold">Projects</h2>
+        <div class="text-sm text-slate-500">*Some links are placeholders — replace with your live URLs.*</div>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <article class="group rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-soft transition will-change-transform" data-animate>
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop" alt="Finance Automation" class="h-44 w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+          </div>
+          <div class="p-5 space-y-3">
+            <h3 class="font-semibold text-lg">Oracle Finance Automation</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">PL/SQL packages & Oracle Cloud integrations to streamline GL/AR/AP workflows; audit‑ready, with performance tuning.</p>
+            <div class="flex gap-2 text-xs">
+              <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">Oracle</span>
+              <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">PL/SQL</span>
+              <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">REST/SOAP</span>
+            </div>
+            <div class="flex gap-3 pt-2">
+              <a class="px-3 py-2 text-sm rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500 hover:text-cyan-500" href="#">Live Demo</a>
+              <a class="px-3 py-2 text-sm rounded-xl bg-cyan-500 text-white hover:translate-y-[-2px] transition" href="#">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="group rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-soft transition" data-animate>
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop" alt="Full‑stack App" class="h-44 w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+          </div>
+          <div class="p-5 space-y-3">
+            <h3 class="font-semibold text-lg">Billing & Invoicing Dashboard</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">Full‑stack dashboard integrating SAP billing data with role‑based access and real‑time charts.</p>
+            <div class="flex gap-2 text-xs">
+              <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">Laravel</span>
+              <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">MySQL</span>
+              <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">Tailwind</span>
+            </div>
+            <div class="flex gap-3 pt-2">
+              <a class="px-3 py-2 text-sm rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500 hover:text-cyan-500" href="#">Live Demo</a>
+              <a class="px-3 py-2 text-sm rounded-xl bg-cyan-500 text-white hover:translate-y-[-2px] transition" href="#">GitHub</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="group rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm hover:shadow-soft transition" data-animate>
+          <div class="relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=1200&auto=format&fit=crop" alt="API Integrations" class="h-44 w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy">
+          </div>
+          <div class="p-5 space-y-3">
+            <h3 class="font-semibold text-lg">API Integration Suite</h3>
+            <p class="text-sm text-slate-600 dark:text-slate-300">Postman‑driven test harness for SOAP/REST APIs with reporting and mock servers.</p>
+            <div class="flex gap-2 text-xs">
+              <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">Postman</span>
+              <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">Node.js</span>
+              <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800">CI/CD</span>
+            </div>
+            <div class="flex gap-3 pt-2">
+              <a class="px-3 py-2 text-sm rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500 hover:text-cyan-500" href="#">Live Demo</a>
+              <a class="px-3 py-2 text-sm rounded-xl bg-cyan-500 text-white hover:translate-y-[-2px] transition" href="#">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-20 md:py-24 bg-pastel-base/60 dark:bg-slate-900/40">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Skills</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Frontend -->
+        <div class="rounded-3xl p-6 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900" data-animate>
+          <h3 class="font-semibold mb-4">Frontend</h3>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center justify-between"><span>HTML / CSS / Tailwind</span><span class="w-2/5 h-2 bg-slate-200 dark:bg-slate-800 rounded"><span class="block h-2 rounded bg-cyan-500" style="width: 90%"></span></span></li>
+            <li class="flex items-center justify-between"><span>JavaScript</span><span class="w-2/5 h-2 bg-slate-200 dark:bg-slate-800 rounded"><span class="block h-2 rounded bg-cyan-500" style="width: 80%"></span></span></li>
+            <li class="flex items-center justify-between"><span>Laravel (Blade)</span><span class="w-2/5 h-2 bg-slate-200 dark:bg-slate-800 rounded"><span class="block h-2 rounded bg-cyan-500" style="width: 75%"></span></span></li>
+          </ul>
+        </div>
+        <!-- Backend -->
+        <div class="rounded-3xl p-6 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900" data-animate>
+          <h3 class="font-semibold mb-4">Backend / DB</h3>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center justify-between"><span>PL/SQL · Oracle</span><span class="w-2/5 h-2 bg-slate-200 dark:bg-slate-800 rounded"><span class="block h-2 rounded bg-cyan-500" style="width: 90%"></span></span></li>
+            <li class="flex items-center justify-between"><span>SQL / MySQL</span><span class="w-2/5 h-2 bg-slate-200 dark:bg-slate-800 rounded"><span class="block h-2 rounded bg-cyan-500" style="width: 85%"></span></span></li>
+            <li class="flex items-center justify-between"><span>Node.js (APIs)</span><span class="w-2/5 h-2 bg-slate-200 dark:bg-slate-800 rounded"><span class="block h-2 rounded bg-cyan-500" style="width: 65%"></span></span></li>
+          </ul>
+        </div>
+        <!-- Tools -->
+        <div class="rounded-3xl p-6 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900" data-animate>
+          <h3 class="font-semibold mb-4">Tools & Platforms</h3>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center justify-between"><span>Oracle EBS & Cloud</span><span class="w-2/5 h-2 bg-slate-200 dark:bg-slate-800 rounded"><span class="block h-2 rounded bg-cyan-500" style="width: 85%"></span></span></li>
+            <li class="flex items-center justify-between"><span>Postman / SOAP UI</span><span class="w-2/5 h-2 bg-slate-200 dark:bg-slate-800 rounded"><span class="block h-2 rounded bg-cyan-500" style="width: 80%"></span></span></li>
+            <li class="flex items-center justify-between"><span>Git / CI-CD</span><span class="w-2/5 h-2 bg-slate-200 dark:bg-slate-800 rounded"><span class="block h-2 rounded bg-cyan-500" style="width: 75%"></span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 md:py-24">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Contact</h2>
+      <p class="text-slate-600 dark:text-slate-300 mb-8">Have a project, role, or collaboration in mind? Send a message and I’ll get back to you.</p>
+      <form id="contactForm" class="space-y-4" novalidate>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label for="name" class="block text-sm mb-1">Name</label>
+            <input id="name" name="name" type="text" required class="w-full rounded-2xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cyan-500" placeholder="Your name" />
+            <p class="mt-1 text-xs text-pink-600 hidden" data-error="name">Please enter at least 2 characters.</p>
+          </div>
+          <div>
+            <label for="email" class="block text-sm mb-1">Email</label>
+            <input id="email" name="email" type="email" required class="w-full rounded-2xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cyan-500" placeholder="you@example.com" />
+            <p class="mt-1 text-xs text-pink-600 hidden" data-error="email">Enter a valid email.</p>
+          </div>
+        </div>
+        <div>
+          <label for="subject" class="block text-sm mb-1">Subject</label>
+          <input id="subject" name="subject" type="text" required class="w-full rounded-2xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cyan-500" placeholder="How can I help?" />
+          <p class="mt-1 text-xs text-pink-600 hidden" data-error="subject">Subject must be 4+ characters.</p>
+        </div>
+        <div>
+          <label for="message" class="block text-sm mb-1">Message</label>
+          <textarea id="message" name="message" rows="5" required class="w-full rounded-2xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-cyan-500" placeholder="Tell me a bit about your needs"></textarea>
+          <p class="mt-1 text-xs text-pink-600 hidden" data-error="message">Message must be 10+ characters.</p>
+        </div>
+        <button type="submit" class="inline-flex items-center gap-2 rounded-2xl px-6 py-3 bg-cyan-500 text-white shadow-soft hover:translate-y-[-2px] transition">
+          <span>Send Message</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M3.4 20.4 22 12 3.4 3.6 3 10l12 2-12 2z"/></svg>
+        </button>
+        <p id="formSuccess" class="hidden mt-3 text-sm text-emerald-600">Thanks! Your message was sent successfully.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 dark:border-slate-800 py-10">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm">© <span id="year"></span> Yaswanth Kumar C. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="cyaswanthkumar555@gmail.com" class="p-2 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500 hover:text-cyan-500 transition" aria-label="Email">
+          <!-- Envelope icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/><path fill="#fff" d="M4 6h16l-8 6z"/></svg>
+        </a>
+        <a href="https://about.me/chandragiriyaswanthkumar" target="_blank" rel="noopener" class="p-2 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500 hover:text-cyan-500 transition" aria-label="Website">
+          <!-- Link icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M3.9 12a5 5 0 0 1 5-5h3v2h-3a3 3 0 1 0 0 6h3v2h-3a5 5 0 0 1-5-5Zm6-1h4v2h-4v-2Zm5.1-4h3a5 5 0 0 1 0 10h-3v-2h3a3 3 0 1 0 0-6h-3V7Z"/></svg>
+        </a>
+        <a href="https://github.com/yaswanth555k" class="p-2 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500 hover:text-cyan-500 transition" aria-label="GitHub">
+          <!-- GitHub icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.2-3.4-1.2-.4-1-1-1.3-1-1.3-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1 3 .8.1-.6.4-1 .7-1.2-2.2-.3-4.5-1.1-4.5-4.9 0-1.1.4-2 1-2.8-.1-.2-.5-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c2-1.3 2.8-1 2.8-1 .6 1.4.2 2.5.1 2.7.6.8 1 1.7 1 2.8 0 3.8-2.3 4.6-4.6 4.9.3.3.7.9.7 1.9v2.9c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
+        </a>
+        <a href="linkedin.com/in/chandragiri-yaswanth-kumar-77a2a3186" class="p-2 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500 hover:text-cyan-500 transition" aria-label="LinkedIn">
+          <!-- LinkedIn icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zM8.5 8h3.8v2.2h.1c.5-1 1.8-2.2 3.8-2.2 4.1 0 4.9 2.7 4.9 6.2V24h-4v-6.7c0-1.6 0-3.7-2.3-3.7-2.3 0-2.7 1.7-2.7 3.6V24h-4V8z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-top button -->
+  <button id="toTop" class="fixed bottom-6 right-6 hidden rounded-full p-3 bg-cyan-500 text-white shadow-lg hover:translate-y-[-2px] transition" aria-label="Scroll to top">
+    ↑
+  </button>
+
+  <script>
+    // Dark mode preference + toggle
+    const root = document.documentElement;
+    const userPref = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if ((userPref === 'dark') || (!userPref && prefersDark)) root.classList.add('dark');
+    const toggleTheme = () => {
+      root.classList.toggle('dark');
+      localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+    };
+    document.getElementById('themeToggle')?.addEventListener('click', toggleTheme);
+    document.getElementById('themeToggleDesktop')?.addEventListener('click', toggleTheme);
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Fade on load for hero
+    window.addEventListener('load', () => {
+      document.querySelector('#home .animate-fadeUp')?.classList.remove('opacity-0');
+    });
+
+    // IntersectionObserver for scroll-triggered animations
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fadeUp');
+          entry.target.classList.remove('opacity-0');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('[data-animate]').forEach(el => io.observe(el));
+
+    // Smooth active link highlighting
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const setActive = () => {
+      let index = sections.length;
+      while (--index && window.scrollY + 120 < sections[index].offsetTop) {}
+      navLinks.forEach(link => link.classList.remove('text-cyan-500'));
+      const id = sections[index]?.id;
+      const active = document.querySelector(`.nav-link[href="#${id}"]`);
+      active?.classList.add('text-cyan-500');
+    };
+    setActive();
+    window.addEventListener('scroll', setActive);
+
+    // Scroll to top button
+    const toTop = document.getElementById('toTop');
+    window.addEventListener('scroll', () => {
+      toTop.classList.toggle('hidden', window.scrollY < 400);
+
+      // Parallax wobble
+      const y = window.scrollY * 0.08;
+      const glow = document.getElementById('heroGlow');
+      if (glow) glow.style.transform = `translate3d(${y}px, ${y/2}px, 0)`;
+    });
+    toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Contact form validation + success message (front-end only)
+    const form = document.getElementById('contactForm');
+    const showError = (name, show) => {
+      const el = document.querySelector(`[data-error="${name}"]`);
+      if (el) el.classList.toggle('hidden', !show);
+    };
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const subject = form.subject.value.trim();
+      const message = form.message.value.trim();
+
+      let valid = true;
+      if (name.length < 2) { showError('name', true); valid = false; } else showError('name', false);
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showError('email', true); valid = false; } else showError('email', false);
+      if (subject.length < 4) { showError('subject', true); valid = false; } else showError('subject', false);
+      if (message.length < 10) { showError('message', true); valid = false; } else showError('message', false);
+
+      if (!valid) return;
+
+      // Simulate async submit
+      const btn = form.querySelector('button[type="submit"]');
+      const success = document.getElementById('formSuccess');
+      const original = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = '<span>Sending…</span>';
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.innerHTML = original;
+        success.classList.remove('hidden');
+        form.reset();
+      }, 800);
+    });
+  </script>
+</body>
+</html>
